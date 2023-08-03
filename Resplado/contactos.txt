@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactanos.css">
+    <title>Contactanos</title>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Contactanos</h1>
+        <img src="img/ICONO_CONTACTANOS.png">
+    </div>
+    <div class="conteiner">
+        <div class="left">
+            <!-- Contenido de la parte left -->
+            <div class="content">
+                <img src="img/CONTACTANOS_RELOJ.png">
+                <div class="text">
+                    <h3>Horarios de atención</h3>
+                    <h3>Lun - Vie (9:00 - 18:00)</h3>
+                </div>
+            </div>
+            <div class="content">
+                <img src="img/CONTACTANOS_TELEFONOS.png">
+                <div class="text">
+                    <h3>Comunicate con nosotros</h3>
+                    <h3>+51 992 275 316</h3>
+                </div>
+            </div>
+            <div class="content">
+                <img src="img/CONTACTANOS_EMAIL.png">
+                <div class="text">
+                    <h3>E-mail</h3>
+                    <h3>gflores@ccip.com.pe</h3>
+                </div>
+            </div>
+            <div class="content">
+                <img src="img/CONTACTANOS_UBICACION.png">
+                <div class="text">
+                    <h3>Visitanos</h3>
+                    <h3>Coop. Villa Hermosa A-4,</h3>
+                    <h3>Paucarpata - Arequipa</h3>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <!-- Contenido de la parte right -->
+            <h2>Derecha</h2>
+            <p>Contenido derecha...</p>
+        </div>
+    </div>
+</body>
+
+</html>
+**********************
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura Bold'), local('Futura-Bold'),
+        url('FuturaLT-Bold.woff2') format('woff2'),
+        url('FuturaLT-Bold.woff') format('woff'),
+        url('FuturaLT-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Futura', sans-serif;
+    background-image: url(../img/FONDO.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 5%;
+    transition: transform 0.3s ease;
+}
+
+.titulo h1 {
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+
+.titulo img {
+    width: 100px;
+    margin-left: 30px;
+}
+
+.titulo:hover {
+    transform: scale(1.1);
+}
+
+.conteiner {
+    display: flex; /* Creamos un nuevo conteiner para dividir la página en dos */
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    color: white; /*color de todo el conteiner*/
+}
+
+.left,
+.right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.left {
+    margin-right: 10px;
+    margin-left: 15%; /* Agregamos un margen izquierdo para alejar la imagen de la izquierda */
+    display: flex;
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    align-items: center; /* Centramos los elementos horizontalmente */
+}
+
+.left .content {
+    margin-bottom: 20px; /* Agregamos espacio entre los contenidos */
+    display: flex; /* Utilizamos flexbox para alinear la imagen y el texto horizontalmente */
+    align-items: center; /* Centramos los elementos horizontalmente */
+}
+
+.left img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+/* Estilos adicionales si es necesario */
+.right {
+    margin-left: 10px;
+}
